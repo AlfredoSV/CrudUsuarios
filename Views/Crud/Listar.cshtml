@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+	int i = 1;
+}
+
+<div class="text-center">
+  
+  
+ <div class="table-responsive-sm">
+  <table  class="table">
+  
+  <thead class="thead-dark" >
+  
+  <tr>
+  <th scope="col">
+   Nombre
+  </th>
+  <th scope="col">
+   Apellido
+  </th>
+   <th scope="col">
+   Acciones
+  </th>
+  </tr>
+  
+  </thead>
+  
+  <tbody>
+  
+   
+  @foreach(var item in ViewBag.alumnos){
+	 <tr>
+	 
+	   <td>
+  @item.Nombre
+  </td>
+	  <td>
+  @item.apellidoP
+  </td>
+  	  <td>
+  <a href="Crud/Eliminar/@i" class="btn btn-danger">Eliminar</a>
+<a href="Crud/Editar/@i" class="btn btn-warning">Editar</a>
+  </td>
+ 
+	
+ </tr>
+ }
+ 
+
+
+  
+  
+  </tbody>
+  
+  
+ 
+  
+    
+  </table>
+</div>
+ 
+ 
+ 
+</div>
