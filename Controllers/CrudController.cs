@@ -8,6 +8,8 @@ using Microsoft.Extensions.Logging;
 using CrudUsuarios.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Rotativa.AspNetCore;
+
 
 namespace CrudUsuarios.Controllers
 {
@@ -45,6 +47,16 @@ namespace CrudUsuarios.Controllers
 			}
 			ViewBag.exito = true;
 			
+			_sql_serverContext.Add<Usuario>(new Usuario(){
+				Nombre = model.Nombre, ApellidoP = model.ApellidoP, 
+				ApellidoM = model.ApellidoM,Correo = model.Correo,
+				FechaNacimeinto = model.FechaNacimeinto,
+				AcercaDeMi = model.AcercaDeMi
+			});
+			
+			_sql_serverContext.SaveChanges();
+			
+			
 			ModelState.Clear();
 		
 			return View();
@@ -74,15 +86,7 @@ namespace CrudUsuarios.Controllers
 				
 			
 			}
-			
-			/*if(desde == 0 && opcion == -1){
-				desde = 0;
-				hasta = 5;
-				
-				
 	
-	
-			}*/
 			
 			if(desde == 0 && (opcion == 1 || opcion == -1)){
 				ViewBag.re = false;
@@ -97,17 +101,9 @@ namespace CrudUsuarios.Controllers
 			}
 			
 	
+	
 			
-			/*if(desde == ViewBag.totalR ){
-			
-				desde = desde - 5;	
-				hasta = ViewBag.totalR ;	
-			
-			
-			}
-			*/
-			
-			ViewBag.alumnos =  _sql_serverContext.Usuarios.FromSqlRaw($"EXECUTE dbo.paginacion {desde+1}, {hasta}").ToList();
+			ViewBag.usuarios =  _sql_serverContext.Usuarios.FromSqlRaw($"EXECUTE dbo.paginacion {desde+1}, {hasta}").ToList();
 			
 		
 		
@@ -124,31 +120,34 @@ namespace CrudUsuarios.Controllers
 			
 		
 			
-			//ViewBag.alumnos = _sql_serverContext.Usuarios.ToList();
+			
             return View();
         }
 		
-		public string DescargarPDF()
+		public IActionResult DescargarPDF()
         {
-			//Ver información de un usuarios
 			
-            return "hola";
+            return new ViewAsPdf("ListarPDF", _sql_serverContext.Usuarios.ToList())
+            {
+				
+                 FileName = "PDF Doc.pdf"
+            };
         }
 		
 		[HttpGet("{controller}/Editar/{id}")]
 		public string Editar(int id)
         {
-			//Ver información de un usuarios
 			
             return "Editar" + id;
         }
 		
 		[HttpGet("{controller}/Eliminar/{id}")]
-		public string Eliminar(int id)
+		public IActionResult Eliminar(Guid id)
         {
-			//Ver información de un usuarios
+			_sql_serverContext.Usuarios.Remove(new  Usuario(){Id = id});
+			_sql_serverContext.SaveChanges();
 			
-            return "Eliminar" + id;
+            return Redirect("https://localhost:5001/Crud/Listar/0/1");
         }
 
        

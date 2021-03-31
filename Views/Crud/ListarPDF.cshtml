@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+	Layout = null;
+	
+}
+
+@model IList<CrudUsuarios.Models.Usuario>;
+
+
+<style>
+
+.principal,table {
+	
+	width:100%;
+	text-aling:center;
+
+}
+
+</style>
+
+<div class="principal">
+  
+
+ <div>
+
+
+ <table border="1">
+  
+  <thead >
+  
+  <tr>
+  <th >
+   Nombre
+  </th>
+  <th >
+   Apellido paterno
+  </th>
+   <th >
+   Apellido materno
+  </th>
+   <th >
+   Correo
+  </th>
+   <th >
+   Fecha de nacimiento
+  </th>
+
+  </tr>
+  
+  </thead>
+  
+  <tbody>
+  
+   
+  @foreach(var item in @Model){
+	 <tr>
+	 
+	   <td>
+  @item.Nombre
+  </td>
+	  <td>
+  @item.ApellidoP
+  </td>
+  	  <td>
+  @item.ApellidoM
+  </td>
+  	  <td>
+  @item.Correo
+  </td>
+  	  <td>
+  @item.FechaNacimeinto
+  </td>
+ 	
+ </tr>
+ }
+ 
+
+
+  
+  
+  </tbody>
+  
+  
+ 
+  
+    
+  </table>
+  
+
+</div>
+ 
+ 
+</div>
+

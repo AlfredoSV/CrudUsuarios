@@ -1,15 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-	int i = 1;
+	
 }
 
 
 
 <div class="text-center">
   
-  
+ @if(ViewBag.usuarios.Count == 0){
+ 
+ <div class="alert alert-warning" role="alert">
+		<h1>Actualmente usted no tiene ningun usuario registrado.</h1>
+
+</div>
+
+
+}else{  
  <div class="table-responsive-sm">
-  <table  class="table">
+
+
+ <table  class="table">
   
   <thead class="thead-dark" >
   
@@ -39,7 +49,7 @@
   <tbody>
   
    
-  @foreach(var item in ViewBag.alumnos){
+  @foreach(var item in ViewBag.usuarios){
 	 <tr>
 	 
 	   <td>
@@ -58,8 +68,8 @@
   @item.FechaNacimeinto
   </td>
   	  <td>
-  <a href="Crud/Eliminar/@item.Id" class="btn btn-danger">Eliminar</a>
-<a href="Crud/Editar/@item.Id" class="btn btn-warning">Editar</a>
+  <a href="/Crud/Eliminar/@item.Id" class="btn btn-danger">Eliminar</a>
+<a href="/Crud/Editar/@item.Id" class="btn btn-warning">Editar</a>
   </td>
  
 	
@@ -108,6 +118,6 @@
 }
 </div>
  
- 
+ }
  
 </div>

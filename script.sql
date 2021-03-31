@@ -21,7 +21,7 @@ go
 
 DECLARE @i int = 1
 
-WHILE(@i<=10)
+WHILE(@i<1000)
 	BEGIN
 		
 		INSERT INTO usuarios(nombre,apellidoP,apellidoM, correo,fecha_nacimeinto,acercaDeMi) 
