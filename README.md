@@ -1,8 +1,8 @@
 # Crud de Usuarios
 
-Permite crear, eliminar, ver y editra los registros que se encuentran en la tabla uauarios.
-Presenta una paginación de 5 en 5.
-Permite la descargar de un documento PDF con todos los registros listados en una tabla
+*Permite crear, eliminar, ver y editra los registros que se encuentran en la tabla uauarios.
+*Presenta una paginación de 5 en 5.
+*Permite la descargar de un documento PDF con todos los registros listados en una tabla
 
 ## Comenzando 🚀
 
