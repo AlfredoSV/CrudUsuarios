@@ -29,9 +29,7 @@ namespace CrudUsuarios.Controllers
 		[HttpGet]
         public IActionResult Alta()
         {
-			ViewBag.exito = false;
-			
-			
+			ViewBag.exito = false;		
             return View();
         }
 		
@@ -74,53 +72,40 @@ namespace CrudUsuarios.Controllers
 			int hasta = 0;
 			ViewBag.re = true;
 			ViewBag.av = true;
-		
-			
+					
 			if(opcion == 1 && desde != ViewBag.totalR ){
-			
+
+
 				hasta = desde + 5;
+		
 			}else if(opcion == -1 && desde >= 1){
 				
 				hasta = desde;
-				desde-=5;	
-				
+				desde-=5;			
 			
 			}
 	
-			
 			if(desde == 0 && (opcion == 1 || opcion == -1)){
 				ViewBag.re = false;
 									
 			}
-			
-			
+					
 			
 			if(desde+5 >= ViewBag.totalR  && opcion == 1){
 				ViewBag.av = false;
 							
 			}
 			
-	
-	
-			
 			ViewBag.usuarios =  _sql_serverContext.Usuarios.FromSqlRaw($"EXECUTE dbo.paginacion {desde+1}, {hasta}").ToList();
 			
-		
-		
-				
-				ViewBag.desde = hasta;
 			
-				ViewBag.hasta = desde;
-				
+			ViewBag.desde = hasta;
 			
+			ViewBag.hasta = desde;
+					
 			ViewBag.pag = ViewBag.desde/5;
 			
-			
-
-			
-		
-			
-			
+				
             return View();
         }
 		
@@ -135,11 +120,49 @@ namespace CrudUsuarios.Controllers
         }
 		
 		[HttpGet("{controller}/Editar/{id}")]
-		public string Editar(int id)
+		public IActionResult Editar(Guid id)
         {
+			ViewBag.exitoE = false;
+			var model = _sql_serverContext.Usuarios.Where(x=>x.Id == id).Single();
 			
-            return "Editar" + id;
+            return View(model);
         }
+
+
+		[HttpPost("{controller}/Editar/{id?}")]
+		public IActionResult Editar(Usuario model){
+			
+			if(ModelState.IsValid){
+				Usuario usu = _sql_serverContext.Usuarios.Where(x=>x.Id == model.Id).Single();
+				usu.Nombre = model.Nombre;
+				usu.ApellidoP = model.ApellidoP;
+				usu.ApellidoM = model.ApellidoM;
+				usu.Correo = model.Correo;
+				usu.FechaNacimeinto = model.FechaNacimeinto;
+				usu.AcercaDeMi = model.AcercaDeMi;
+				_sql_serverContext.SaveChanges();
+
+				ModelState.Clear();
+				ViewBag.exitoE = true;
+				return View();
+			}
+			ViewBag.exitoE = false;
+
+			return View(model);
+
+		}
+
+		[HttpGet("{controller}/Leer/{id}")]
+		public IActionResult Leer(Guid id)
+        {
+			ViewBag.exitoE = false;
+			var model = _sql_serverContext.Usuarios.Where(x=>x.Id == id).Single();
+			
+            return View(model);
+			
+
+        }
+
 		
 		[HttpGet("{controller}/Eliminar/{id}")]
 		public IActionResult Eliminar(Guid id)

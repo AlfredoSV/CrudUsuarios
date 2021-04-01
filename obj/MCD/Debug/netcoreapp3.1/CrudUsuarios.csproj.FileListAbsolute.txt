@@ -89,3 +89,5 @@ C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\bin\MCD\Debug\netcoreapp3.1\Microsoft.E
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\bin\MCD\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\bin\MCD\Debug\netcoreapp3.1\Rotativa.AspNetCore.dll
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\Razor\Views\Crud\ListarPDF.cshtml.g.cs
+C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\Razor\Views\Crud\Editar.cshtml.g.cs
+C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\Razor\Views\Crud\Leer.cshtml.g.cs

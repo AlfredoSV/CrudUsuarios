@@ -1,0 +1,40 @@
+
+@{
+    ViewData["Title"] = "información de usuario";
+}
+
+@model CrudUsuarios.Models.Usuario
+
+
+<h1>@ViewData["Title"]</h1>
+
+
+  <div class="form-group">
+    <label>Nombre(s):</label> <strong> @Model.Nombre </strong>
+   
+  
+  </div>
+  <div class="form-group">
+    <label>Apellido paterno:</label> <strong>@Model.ApellidoP</strong> 
+    
+    
+  </div>
+   <div class="form-group">
+    <label>Apellido materno:</label> <strong>@Model.ApellidoM</strong> 
+   
+
+  </div>
+   <div class="form-group">
+    <label >Correo electronico:</label> <strong>@Model.Correo</strong>  
+
+
+  </div>
+   <div class="form-group">
+    <label>Fecha de nacimiento:</label> <strong>@Model.FechaNacimeinto</strong>  
+
+   </div>
+   <div class="form-group">
+    <label >Acerca de mí:</label> <strong>@Model.AcercaDeMi</strong> 
+  
+  </div>
+  <a href="/Crud/Listar/0/1" class="btn btn-warning btn-block">Regresar</a>
