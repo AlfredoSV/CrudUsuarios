@@ -1,4 +1,3 @@
-C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\CrudUsuarios.csprojAssemblyReference.cache
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\CrudUsuarios.AssemblyInfoInputs.cache
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\CrudUsuarios.AssemblyInfo.cs
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\CrudUsuarios.csproj.CoreCompileInputs.cache
@@ -7,7 +6,6 @@ C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\CrudUsuario
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\CrudUsuarios.RazorAssemblyInfo.cs
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\bin\MCD\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\bin\MCD\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\bin\MCD\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\bin\MCD\Debug\netcoreapp3.1\CrudUsuarios.exe
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\bin\MCD\Debug\netcoreapp3.1\CrudUsuarios.deps.json
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\bin\MCD\Debug\netcoreapp3.1\CrudUsuarios.runtimeconfig.json
@@ -91,3 +89,6 @@ C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\bin\MCD\Debug\netcoreapp3.1\Rotativa.As
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\Razor\Views\Crud\ListarPDF.cshtml.g.cs
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\Razor\Views\Crud\Editar.cshtml.g.cs
 C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\Razor\Views\Crud\Leer.cshtml.g.cs
+C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\CrudUsuarios.csproj.AssemblyReference.cache
+C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\CrudUsuarios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alfredo-Ad\Desktop\CrudUsuarios\obj\MCD\Debug\netcoreapp3.1\scopedcss\bundle\CrudUsuarios.styles.css

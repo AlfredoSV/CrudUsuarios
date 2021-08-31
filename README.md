@@ -1,10 +1,18 @@
-# Crud de Usuarios
+﻿# Crud de Usuarios
 
 *Permite crear, eliminar, ver y editra los registros que se encuentran en la tabla uauarios.
+![cap1](https://github.com/AlfredoSV/CrudUsuarios/blob/main/capturas/cap1.PNG)
+
 
 *Presenta una paginación de 5 en 5.
 
+![cap2](https://github.com/AlfredoSV/CrudUsuarios/blob/main/capturas/cap2.PNG)
+
+
 *Permite la descargar de un documento PDF con todos los registros listados en una tabla
+
+![cap3](https://github.com/AlfredoSV/CrudUsuarios/blob/main/capturas/cap3.PNG)
+
 
 ## Comenzando 🚀
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3OdvWrKqpFXbqmp6lg/nqk51E8cDHZh44c1ZC7dEFpn8aREtSrs+zkVCva1kfYRELtdiO9FMMwk//GMiwdhpkQ==",
+  "dgSpecHash": "Tqq96mw0eYjrc32HhkJDZte4yiu6HqLlNvR2NQDQ238DjCHSyoMfiygy5nYhdh+mRQmY34MiQXznWQ0QBFi2rg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alfredo-Ad\\Desktop\\CrudUsuarios\\CrudUsuarios.csproj",
   "expectedPackageFiles": [
@@ -198,7 +198,8 @@
     "C:\\Users\\Alfredo-Ad\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Alfredo-Ad\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\Alfredo-Ad\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\Alfredo-Ad\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Alfredo-Ad\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Alfredo-Ad\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
   "logs": []
 }
